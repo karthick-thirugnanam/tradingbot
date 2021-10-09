@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/innov
+    username: postgres
+    password: postgres
+
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost/innov
+    user: postgres
+    password:
+    baseline-on-migrate: true
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    ddl-auto: validate
+    format_sql: true
+
+server:
+  port: 8081
+
+# Swagger enable and disable config; possible values [tru/false]
+springfox:
+  documentation:
+    enabled=: true
+
+logging.level.org.hibernate.SQL: DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+spring.servlet.multipart.max-file-size: 128MB
+spring.servlet.multipart.max-request-size: 128MB
+spring.servlet.multipart.enabled: true
