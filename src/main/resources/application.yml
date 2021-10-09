@@ -9,7 +9,7 @@ spring:
     enabled: true
     url: jdbc:postgresql://localhost/innov
     user: postgres
-    password:
+    password: postgres
     baseline-on-migrate: true
 
   jpa:

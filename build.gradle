@@ -28,8 +28,6 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	compileOnly group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
-	compileOnly group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 }
 
 test {
